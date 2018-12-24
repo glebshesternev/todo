@@ -12,11 +12,11 @@ public interface Dao<T extends Entity> {
 
     void insert(T o);
 
-    void remove(long id);
-
-    void update(T o);
-
     T get(long id);
 
     List<T> getAll();
+
+    void update(T o);
+
+    void remove(long id);
 }
